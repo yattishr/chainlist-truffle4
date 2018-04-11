@@ -1,0 +1,14 @@
+web3.fromWei(web3.eth.getBalance(web3.eth.accounts[0]), "ether").toNumber()
+
+web3.eth.coinbase
+
+Greetings.deployed().then(function(instance) {app = instance;})
+
+app.getGreetings({from: web3.eth.accounts[1]})
+
+web3.eth.sendTransaction({from: web3.eth.accounts[0], to: web3.eth.accounts[1], value: web3.toWei(5, "ether")})
+
+
+app.sellArticle("iPhone 7", "Selling in order to buy Galaxy S10", web3.toWei(3, "ether"), {from: web3.eth.accounts[1]})
+
+ChainList.deployed().then(function(instance) {app = instance;})
