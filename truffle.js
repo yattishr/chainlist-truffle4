@@ -13,6 +13,12 @@ module.exports = {
                port: 8545,
                network_id: "4224", // Match 4224 network id
                gas: 4700000// set the max gas limit.
+          },
+          rinkeby: {
+               host: "localhost",
+               port: 8545,
+               network_id: "4", // Match 4 network id for Rinkeby Testnet.
+               gas: 4700000// set the max gas limit.
           }
      }
 };
